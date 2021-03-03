@@ -1,6 +1,6 @@
 # Next.js with MongoDB Auth
 
-This is a sample project that uses Next JS and MongoDB to create users. This project illustrates how to use JWT cookies to authorize user access to protected routes.
+This is a sample project that uses Next.js and MongoDB to create users. This project illustrates how to use JWT cookies to authorize user access to protected routes.
 
 ### The backend contains 3 API routes:
 
@@ -8,7 +8,7 @@ This is a sample project that uses Next JS and MongoDB to create users. This pro
 - Login
 - Profile
 
-With these routes, new users can sign up, login, and view a protected route, the `/profile` page.
+With these routes, new users can sign up, login, and view a protected route, like the `/profile` page.
 
 ### The frontend uses Next.js to:
 
@@ -130,9 +130,9 @@ All of the next js components. Much of the `Form` logic has been abstracted away
 
 All of the next js pages. For the most part these just display a `Form` component.
 
-### lib and withAuth
+### lib and `withAuth`
 
-This contains a very important Higher Order Function, `withAuth`. This function can wrap any protected pages, like `profile`, and validate whether the user is signed in via a the JWT Cookie. It does this by checking for the cookie via `getServerSideProps`. If this user is signed in, let them proceed to the route. Otherwise, navigate them to the `login` page.
+This directory contains a very important Higher Order Function, `withAuth`. This function can wrap any protected page, like `profile`, and validate whether the user is signed in via a JWT Cookie. It does this by checking for the cookie via `getServerSideProps`. If this user is signed in, let them proceed to the route. Otherwise, navigate them to the `login` page.
 
 In practice, it looks like this:
 
@@ -182,4 +182,4 @@ Here are a few articles that helped with making this project:
 
 # Next Steps
 
-From here, you can test out the different pieces, and see how it all works. The next step for this project is to try out using Next JS `useSWR` package for all client requests. And, eventually transferring the entire backend over to Next JS, serverless functions via the `api` folder.
+From here, you can test out the different pieces, and see how it all works. The next step for this project is to try out using Next.js `useSWR` package for all client requests. And, eventually transferring the entire backend over to Next.js, serverless functions via the `api` folder.
