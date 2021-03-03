@@ -50,14 +50,14 @@ SECRET_JWT_KEY = <AnySuperSecretKey>
 
 ### Install dependencies and start up the servers:
 
-Make sure you are in the root directory of this project. Then, in your terminal:
+Make sure you are in the root directory of this project, `mongo-auth-nextjs`. Then, in your terminal:
 
 ```
 npm run setup
 npm run dev
 ```
 
-These commands will install of the dependencies for you frontend and backend and start their servers up.
+These commands will install of the dependencies for the frontend and the backend, and start their servers up.
 
 The backend is available at `http://localhost:<PORT>`, where `PORT` is the one you designated in the `.env` file.
 
