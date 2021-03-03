@@ -8,9 +8,9 @@ const Profile = async (req, res, next) => {
     // the Auth.js middleware will parse that JWT when it is sent from the client
     // once it is parsed, the payload of the JWT, the user id, will be stored
     // in req.user and passed along to the Profile resolver
-    
+
     const user = await User.findById(req.user.id);
-    console.log("-----profile.js------YOUR USER!",user)
+    console.log('-----profile.js------YOUR USER!', user);
     res.json(user);
   } catch (e) {
     res.send({

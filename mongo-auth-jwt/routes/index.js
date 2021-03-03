@@ -8,7 +8,7 @@ const routes = (app) => {
   app.post('/signup', Signup);
   app.post('/login', Login);
   app.get('/profile', isAuthorized, Profile); // check to make sure the user is authorized
-  app.post('/logout', Logout)
+  app.post('/logout', Logout);
 };
 
 export default routes;

@@ -33,7 +33,7 @@ const Signup = async (req, res) => {
       },
     };
 
-    generateToken(res,payload);
+    generateToken(res, payload);
   } catch (e) {
     console.log(e.message);
     res.status(500).send('Error in saving');

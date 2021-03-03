@@ -6,7 +6,8 @@ const StatusStyles = styled.div`
   flex-flow: row nowrap;
   max-width: 100%;
   color: var(--white);
-  background-color: ${(props) => (props.status === 'success' ? 'green' : 'var(--red-error)')};
+  background-color: ${(props) =>
+    props.status === 'success' ? 'green' : 'var(--red-error)'};
   border-radius: var(--border-normal);
   padding: var(--padding-small);
   margin-bottom: var(--padding-normal);

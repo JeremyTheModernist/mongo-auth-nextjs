@@ -32,7 +32,7 @@ const Signup = async (req, res) => {
     };
 
     // create a new token for the client and send it:
-    generateToken(res,payload);
+    generateToken(res, payload);
     // res.send(token)
   } catch (e) {
     console.log(e.message);
